@@ -1,0 +1,119 @@
+
+/*"
+FONTS FOR USAGE
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+"*/
+.wrapper {
+  color: #66BFBF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developer {
+  width: 15ch;
+  animation: typing 1.5s steps(15), blink 0.5s step-end infinite alternate;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+body{
+  color: #40514E;
+  background-color: white;
+  margin: 0;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2{
+  font-weight: normal;
+  font-family: 'Raleway', sans-serif;
+  color: #66BFBF;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+h3{
+  color: #11999E;
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  color: #11999E;
+  text-decoration: none;
+  margin: 0.625rem 1.25rem;
+}
+a:hover{
+  color: #D9D7F1;
+}
+hr {
+  border: dotted #AEFEFF 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+p {
+  line-height: 2;
+}
+.bottom-cloud{
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  bottom: 300px;
+}
+.cr{
+  padding: 20;
+}
+.htmlicon{
+  width: 15%;
+  float: left;
+  margin-right: 30px;
+}
+.isim{
+  color: #66BFBF;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 400%;
+  line-height: 4;
+}
+.skills{
+  padding-top: 20px;
+}
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+.top-container{
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.top-cloud{
+  position: absolute;
+  right: 200px;
+  top: 40px;
+}
+.web{
+  font-size: 24px;
+}
