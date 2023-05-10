@@ -482,3 +482,19 @@ const secondHighScore = scores[1]//destructuring example. in this example we are
 
 const [gold, silver, bronze, ...everyoneElse] = scores//destructuring example. in this example we are assigning the first three elements of the array to gold, silver and bronze and the rest of the elements to everyoneElse.
 
+const user = {
+    email: 'harvey@gmail.com',	
+    password: 'sAdfasdfasdf',
+    firstName: 'Harvey',
+    lastName: 'Milk',
+    born: 1930,
+    died: 1978,
+    bio: 'Harvey Bernard Milk was an American politician and the first openly...',
+    city: 'San Fransisco',
+    state: 'California'}
+
+//const firstName = user.firstName//destructuring example. in this example we are assigning the firstName of the object to firstName.
+//const lastName = user.lastName//destructuring example. in this example we are assigning the lastName of the object to lastName.
+//const email = user.email//destructuring example. in this example we are assigning the email of the object to email.
+
+const {firstName, lastName, email, born, died, password} = user//destructuring example. in this example we are assigning the firstName, lastName, email, born, died and password of the object to firstName, lastName, email, born, died and password.
