@@ -445,3 +445,12 @@ const minPrice = prices.reduce((min,price) => {
     }
     return min
 })//reduce example. in this example we are finding the minimum price.
+
+function rollDie(numSides=6){
+    return Math.floor(Math.random()*numSides)+1
+}
+
+numbers = [1,2,3,4,5,6,7,8,9,10];
+Math.min(...numbers)//spread example. in this example we are finding the minimum number.
+//console.log(...numbers)//spread example. in this example we are printing every number.
+
