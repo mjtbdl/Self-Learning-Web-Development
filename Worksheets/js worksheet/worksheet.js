@@ -432,3 +432,9 @@ const allEvens = numbers2.every(num => num%2===0)//every example. in this exampl
 function allEvens (even) {
     return even.every(even => even%2===0)
 }//every example. in this example we are checking if every number is even. which is false.
+
+const prices = [9.99,1.50,19.99,49.99,30.50];
+
+const total = prices.reduce((total,price) => {
+    return total+price
+})//reduce example. in this example we are adding all the prices.
