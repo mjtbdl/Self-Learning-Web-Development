@@ -498,3 +498,26 @@ const user = {
 //const email = user.email//destructuring example. in this example we are assigning the email of the object to email.
 
 const {firstName, lastName, email, born, died, password} = user//destructuring example. in this example we are assigning the firstName, lastName, email, born, died and password of the object to firstName, lastName, email, born, died and password.
+
+const {city: hometown} = user//destructuring example. in this example we are assigning the city of the object to hometown.
+
+const user2 = {
+    firstName: 'Susan',
+    lastName: 'Milk',
+    born: 1980
+}
+
+const {firstName: fn, lastName: ln, born: by, email: mail='N/A'} = user2//destructuring example. in this example we are assigning the firstName, lastName, born and email of the object to fn, ln, by and email. if there is no email in the object we are assigning N/A to email.
+
+
+
+const writerName = ({firstName, lastName}) => {
+    return `${firstName} ${lastName}`
+}//destructuring example. in this example we are assigning the firstName and lastName of the object to firstName and lastName.
+
+const writer = {
+    firstName: 'Mecit',
+    lastName: 'Bedel'
+}
+
+const fullName = writerName(writer)//destructuring example. in this example we are assigning the firstName and lastName of the object to firstName and lastName.
