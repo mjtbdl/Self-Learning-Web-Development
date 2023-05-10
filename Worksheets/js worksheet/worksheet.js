@@ -474,3 +474,11 @@ function raceResults(gold, silver, ...everyoneElse){
     console.log(`Silver medal goes to: ${silver}`)
     console.log(`And thanks to everyone else: ${everyoneElse}`)
 }//rest example. in this example we are printing the first two and the rest of the names.
+
+const scores = [929321, 899341, 888336, 772739, 543671, 243567, 111934];
+
+const highScore = scores[0]//destructuring example. in this example we are assigning the first element of the array to highScore.
+const secondHighScore = scores[1]//destructuring example. in this example we are assigning the second element of the array to secondHighScore.
+
+const [gold, silver, bronze, ...everyoneElse] = scores//destructuring example. in this example we are assigning the first three elements of the array to gold, silver and bronze and the rest of the elements to everyoneElse.
+
