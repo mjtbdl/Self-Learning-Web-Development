@@ -464,3 +464,7 @@ const dataFromForm = {
     username: 'tfunke'
 }
 const newUser = {...dataFromForm, id: 2345, isAdmin: false}//spread example. in this example we are adding new properties to an object.
+
+function sum(... num){
+    return num.reduce ((total,el) => total+el)
+}//rest example. in this example we are adding all the numbers.
