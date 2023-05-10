@@ -376,9 +376,13 @@ for (let num of numbers2){
 
 const movies = [
     { title: 'Amadeus', score: 99 },
-    { title: 'Stand By Me', score: 85 },
+    { title: 'Stand By Me', score: 60 },
     { title: 'Parasite', score: 95 },
-    { title: 'Alien', score: 90 }
+    { title: 'Alien', score: 70 },
+    { title: 'E.T.', score: 100 },
+    { title: 'Emoji Movie', score: 40},
+    { title: 'Fifty Shades of Grey', score: 25 },
+    { title: 'The Room', score : 37}
 ]
 movies.forEach(function(movie){
     //console.log(`${movie.title} - ${movie.score}/100`)
@@ -395,3 +399,24 @@ const titles = movies.map(function(movie){
 const add2 = (x,y) => {
     return x+y;
 }//arrow function example. in this example we are adding two numbers.
+
+setTimeout(() => {
+    //console.log('Hello')
+}, 3000)//set time out example. in this example we are printing hello after 3 seconds.
+
+setInterval(() => {
+    //console.log(Math.random())
+},1000)//set interval example. in this example we are printing random numbers every second.
+
+const id = setInterval(() => {
+    //console.log(Math.random())
+},1000)//set interval example. in this example we are printing random numbers every second.
+
+clearInterval(id)//clear interval example. in this example we are stopping the interval.
+
+const goodMovies = movies.filter(m => m.score>80)//filter example. in this example we are filtering movies with score higher than 80.
+
+movies
+    .filter(m => m.score>80)
+    .map(m => m.title)//chaining example. in this example we are filtering movies with score higher than 80 and then we are mapping their titles.
+    
