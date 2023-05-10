@@ -415,8 +415,20 @@ const id = setInterval(() => {
 clearInterval(id)//clear interval example. in this example we are stopping the interval.
 
 const goodMovies = movies.filter(m => m.score>80)//filter example. in this example we are filtering movies with score higher than 80.
-
 movies
     .filter(m => m.score>80)
     .map(m => m.title)//chaining example. in this example we are filtering movies with score higher than 80 and then we are mapping their titles.
-    
+
+function validUserNames(usernames){
+    return usernames.filter(name => name.length<10)
+}//filter example. in this example we are filtering usernames with less than 10 characters.
+
+const exams = [80,98,92,78,70,90,89,84,81,77];
+exams.every(score => score>=75)//every example. in this example we are checking if every score is higher than 75. which is false.
+exams.some(score => score>=75)//some example. in this example we are checking if some score is higher than 75. which is true.
+
+const allEvens = numbers2.every(num => num%2===0)//every example. in this example we are checking if every number is even. which is false.
+
+function allEvens (even) {
+    return even.every(even => even%2===0)
+}//every example. in this example we are checking if every number is even. which is false.
