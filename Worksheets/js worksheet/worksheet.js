@@ -468,3 +468,9 @@ const newUser = {...dataFromForm, id: 2345, isAdmin: false}//spread example. in 
 function sum(... num){
     return num.reduce ((total,el) => total+el)
 }//rest example. in this example we are adding all the numbers.
+
+function raceResults(gold, silver, ...everyoneElse){
+    console.log(`Gold medal goes to: ${gold}`)
+    console.log(`Silver medal goes to: ${silver}`)
+    console.log(`And thanks to everyone else: ${everyoneElse}`)
+}//rest example. in this example we are printing the first two and the rest of the names.
