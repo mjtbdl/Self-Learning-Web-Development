@@ -454,3 +454,13 @@ numbers = [1,2,3,4,5,6,7,8,9,10];
 Math.min(...numbers)//spread example. in this example we are finding the minimum number.
 //console.log(...numbers)//spread example. in this example we are printing every number.
 
+cats = ['Blue', 'Scout', 'Rocket'];
+dogs = ['Rusty', 'Wyatt'];
+allPets = [...cats, ...dogs, 'Speedy']//spread example. in this example we are merging two arrays.
+
+const dataFromForm = {
+    email: 'blueman@gmail.com',	
+    password: 'tobias123!',
+    username: 'tfunke'
+}
+const newUser = {...dataFromForm, id: 2345, isAdmin: false}//spread example. in this example we are adding new properties to an object.
