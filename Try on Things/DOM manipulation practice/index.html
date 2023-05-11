@@ -9,13 +9,31 @@
 </head>
 <body>
 	<div class="container">
-		<h1>DOM Practice</h1>
+		<h1>DOM Practice -</h1>
 		<p>Click the button below to change the text color of this paragraph:</p>
 		<p id="change-me">This text can be changed.</p>
 		<p class="changeable">Change text color for classes named changable</p>
 		<button onclick="changeTextColor()">Change text color for id named change-me</button>
 		<button onclick="changeBgColor()">Change background color of all paragraph tags</button>
 		<button onclick="changeTextColorClass()">Change text color for class named changable</button>
+	</div>
+
+	<div class="container">
+		<h1>DOM Practice</h1>
+		<ul>
+			<li>
+				Click the button below to change the text color of this list:
+			</li>
+			<li id="change-me-too">
+				This text can be changed.
+			</li>
+			<li class="changeable-too">
+				Change text color for classes named changable
+			</li>
+		</ul>
+		<button onclick="changeTextColorQuerySelector()">Change text color for id named change-me</button>
+		<button onclick="changeBgColorQuerySelector()">Change background color of all li tags</button>
+		<button onclick="changeTextColorClassQuerySelector()">Change text color for class named changable</button>
 	</div>
 	<script src="script.js"></script>
 </body>
