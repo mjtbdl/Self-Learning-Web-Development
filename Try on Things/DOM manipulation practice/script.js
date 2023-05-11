@@ -12,3 +12,14 @@ function changeBgColor() {
 }// this is for changing the background color of all the paragraphs using getElementsByTagName.
 
 //getElementsByTagName is used to get all the elements with the specified tag name.
+
+
+
+function changeTextColorClass() {
+    var elements = document.getElementsByClassName("changeable");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.color = "green";
+    }
+}// this is for changing the text color of all the elements with class "changeable" using getElementsByClassName.
+
+//getElementsByClassName is used to get all the elements with the specified class name.
